@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CrystalCore 的博客</title>
+    <link>https://crystalcoreqwq.github.io/posts/</link>
+    <description>Recent content from CrystalCore 的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    
+    <managingEditor>niurousaman@outlook.com (CrystalCore)</managingEditor>
+    <webMaster>niurousaman@outlook.com (CrystalCore)</webMaster>
+    
+    <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
+    
+    <lastBuildDate>Sat, 25 Jul 2026 12:20:54 +0800</lastBuildDate>
+    
+    
+    <atom:link href="https://crystalcoreqwq.github.io/posts/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Class</title>
+      <link>https://crystalcoreqwq.github.io/posts/class/</link>
+      <pubDate>Sat, 25 Jul 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/class/</guid>
+      <description>
+        <![CDATA[<h1>Class</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <h1 id="classstruct-用法">
+<a class="header-anchor" href="#classstruct-%e7%94%a8%e6%b3%95"></a>
+class/struct 用法
+</h1><p>本文主讲 <code>class</code>（类） 的用法，因为和 <code>struct</code> 就一个区别……</p>
+<h2 id="定义">
+<a class="header-anchor" href="#%e5%ae%9a%e4%b9%89"></a>
+定义
+</h2><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="err">类型名称</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// 成员
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>可以添加的成员包括：</p>
+<ul>
+<li>成员变量</li>
+<li>成员函数（包括 <strong>构造函数</strong> 和 <strong>析构函数</strong>）</li>
+<li>一堆……</li>
+</ul>
+<p><code>class</code> 成员默认 <code>private</code> 访问，也就是外界无法访问，那么想让外界访问的话，就有两种方法：</p>
+        
+        <hr><p>本文2026-07-25首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-07-25</p>]]>
+      </description>
+      
+        <category>算法</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Feedxjc</title>
+      <link>https://crystalcoreqwq.github.io/posts/feedxjc/</link>
+      <pubDate>Fri, 24 Jul 2026 10:35:04 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/feedxjc/</guid>
+      <description>
+        <![CDATA[<h1>Feedxjc</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <p>有谁懂 xjc 姐姐吗？</p>
+<p>表面上是一位 OI 超级厉害的大姐姐，实际上也是一直香香软软的小蛋糕！不仅说话软软糯糯的，还经常跟我们讲她的小故事，那一脸认真的样子，就像温柔的姐姐在哄一只闹腾的小猫。有时候有小一点的姐姐给她发私信，她也从不避开，反而大大方方地拉上大家一起看。其他姐姐听说发私信会被 xjc 姐姐“公开处刑”，反而觉得好玩，争先恐后地跑去给她发私信啦！</p>
+        
+        <hr><p>本文2026-07-24首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-07-24</p>]]>
+      </description>
+      
+        <category>休闲/娱乐</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>FeedCC</title>
+      <link>https://crystalcoreqwq.github.io/posts/feedcc/</link>
+      <pubDate>Fri, 24 Jul 2026 10:33:42 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/feedcc/</guid>
+      <description>
+        <![CDATA[<h1>FeedCC</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <p>有谁懂晶核吗？</p>
+<p>表面上是一只香香软软的小蛋糕，实际上也是一只傲娇的小猫咪！不仅做错了事当时绝不道歉，还会胡乱找个理由把错赖到你头上，那副理直气壮的样子，就像是在哄小孩一般，就算偶尔松口，也只是丢下短短几个字，然后扭头就跑。但是过几天，就会弱弱地补上他的道歉，嘴硬心软让人拿他没一点办法。</p>
+        
+        <hr><p>本文2026-07-24首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-07-24</p>]]>
+      </description>
+      
+        <category>休闲/娱乐</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Hugo 搭建博客教程</title>
+      <link>https://crystalcoreqwq.github.io/posts/hugo/</link>
+      <pubDate>Fri, 24 Jul 2026 10:28:46 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/hugo/</guid>
+      <description>
+        <![CDATA[<h1>Hugo 搭建博客教程</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <p>严肃发现我是为数不多用 Hugo 搭建博客的人。</p>
+<p>首先来一览 Hugo 和 Hexo 的差别</p>
+<h3 id="hexo-的主要优势">
+<a class="header-anchor" href="#hexo-%e7%9a%84%e4%b8%bb%e8%a6%81%e4%bc%98%e5%8a%bf"></a>
+Hexo 的主要优势
+</h3><ul>
+<li>上手简单</li>
+<li>功能丰富</li>
+</ul>
+<h3 id="hugo-的主要优势">
+<a class="header-anchor" href="#hugo-%e7%9a%84%e4%b8%bb%e8%a6%81%e4%bc%98%e5%8a%bf"></a>
+Hugo 的主要优势
+</h3><ul>
+<li>构建速度快</li>
+<li>无需依赖 Node.js 等工具</li>
+</ul>
+<p>至于我为什么选择用 Hugo 而不是 Hexo 呢……</p>
+        
+        <hr><p>本文2026-07-24首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-07-24</p>]]>
+      </description>
+      
+        <category>科技/工程</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>神人1</title>
+      <link>https://crystalcoreqwq.github.io/posts/%E7%A5%9E%E4%BA%BA1/</link>
+      <pubDate>Mon, 11 May 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/%E7%A5%9E%E4%BA%BA1/</guid>
+      <description>
+        <![CDATA[<h1>神人1</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <p><img src="/images/The_Gods/%E7%A5%9E%E4%BA%BA1.jpg" alt=""></p>
+        
+        <hr><p>本文2026-05-11首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-05-11</p>]]>
+      </description>
+      
+        <category>休闲/娱乐</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>CF2225D</title>
+      <link>https://crystalcoreqwq.github.io/posts/cf2225d/</link>
+      <pubDate>Fri, 24 Apr 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/cf2225d/</guid>
+      <description>
+        <![CDATA[<h1>CF2225D</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <h2 id="做法">
+<a class="header-anchor" href="#%e5%81%9a%e6%b3%95"></a>
+做法？
+</h2><p>开题时没思路，想着打表看看能不能找规律：哪些区间异或起来能得到 $0$？于是有了以下代码：</p>
+<p>:::info[打表代码]</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define ll long long
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define str string
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define db double
+</span></span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="k">nullptr</span><span class="p">),</span> <span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="k">nullptr</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// 枚举右端点
+</span></span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="p">(</span><span class="n">ll</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">ll</span> <span class="n">cnt</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;:   &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// 枚举左端点
+</span></span></span><span class="line"><span class="cl">		<span class="k">for</span> <span class="p">(</span><span class="n">ll</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="n">cnt</span> <span class="o">^=</span> <span class="n">j</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">			<span class="k">if</span><span class="p">(</span><span class="n">cnt</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="sc">&#39; &#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>:::</p>
+        
+        <hr><p>本文2026-04-24首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-04-24</p>]]>
+      </description>
+      
+        <category>算法</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>CF2225C</title>
+      <link>https://crystalcoreqwq.github.io/posts/cf2225c/</link>
+      <pubDate>Fri, 24 Apr 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/cf2225c/</guid>
+      <description>
+        <![CDATA[<h1>CF2225C</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <h2 id="做法">
+<a class="header-anchor" href="#%e5%81%9a%e6%b3%95"></a>
+做法
+</h2><p>简单的 DP。</p>
+<p>很容易想到，对于一个 $2 \times 2$ 的部分只有两种填法：</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/5eo8ozcu.png" alt=""></p>
+<p>很显然可以 DP 吧？</p>
+<p>设 $dp[i]$ 表示前 $i$ 列满足要求的最小代价。</p>
+<p>然后位置 $i$ 可以由 $i-2$ 通过加两个横着的矩形转移（填充方法 $1$），也可以由 $i-1$ 用过加一个竖着的矩形转移（填充方法 $2$ 取一半）。</p>
+        
+        <hr><p>本文2026-04-24首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-04-24</p>]]>
+      </description>
+      
+        <category>算法</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>网页背景更换</title>
+      <link>https://crystalcoreqwq.github.io/posts/%E7%BD%91%E9%A1%B5%E8%83%8C%E6%99%AF%E6%9B%B4%E6%8D%A2/</link>
+      <pubDate>Fri, 20 Mar 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/%E7%BD%91%E9%A1%B5%E8%83%8C%E6%99%AF%E6%9B%B4%E6%8D%A2/</guid>
+      <description>
+        <![CDATA[<h1>网页背景更换</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <h2 id="使用指南">
+<a class="header-anchor" href="#%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97"></a>
+使用指南
+</h2><p>请确保你已经安装了 Tampermonkey 浏览器扩展。</p>
+<p>安装此脚本后刷新页面，会显示一个蓝色球形按钮，双击可展开、收缩。</p>
+<p>小球展开之后不可拖动，并会出现多个功能按键，将鼠标悬停在按键上会有功能提示。</p>
+        
+        <hr><p>本文2026-03-20首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-03-20</p>]]>
+      </description>
+      
+        <category>科技/工程</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>分块基础</title>
+      <link>https://crystalcoreqwq.github.io/posts/%E5%88%86%E5%9D%97%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 09 Mar 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/%E5%88%86%E5%9D%97%E5%9F%BA%E7%A1%80/</guid>
+      <description>
+        <![CDATA[<h1>分块基础</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <p>分块是一种思维简单，代码简洁易懂的算法，虽然时间复杂度 $O(q \times \sqrt[2]{n})$ 相对于线段树的 $O(q \times \log{n})$ 要慢很多，但是它的算法兼容性和思维、代码难度确实远优于线段树。</p>
+        
+        <hr><p>本文2026-03-09首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-03-09</p>]]>
+      </description>
+      
+        <category>算法</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>洛谷300粉粉福</title>
+      <link>https://crystalcoreqwq.github.io/posts/%E6%B4%9B%E8%B0%B7300%E7%B2%89%E7%B2%89%E7%A6%8F/</link>
+      <pubDate>Fri, 27 Feb 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/%E6%B4%9B%E8%B0%B7300%E7%B2%89%E7%B2%89%E7%A6%8F/</guid>
+      <description>
+        <![CDATA[<h1>洛谷300粉粉福</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <p><img src="/images/Luogu_Users_Images/510555%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%282%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%283%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%284%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%285%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%286%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%287%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%288%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%289%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2810%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2811%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2812%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2813%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2814%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2815%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2816%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2817%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2818%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2819%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2820%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2821%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2822%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2823%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2824%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2825%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2826%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2827%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2828%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2829%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2830%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2831%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2832%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2833%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2834%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2835%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/510555%2836%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/513997%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/559037%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/773282%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/883803%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/883803%282%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/1288382%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/1288382%282%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/1288382%283%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/1384934%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/1440542%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/1542698%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/1432246%281%29.jpg" alt=""></p>
+<p><img src="/images/Luogu_Users_Images/1971739%281%29.jpg" alt=""></p>
+        
+        <hr><p>本文2026-02-27首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-02-27</p>]]>
+      </description>
+      
+        <category>休闲/娱乐</category>
+      
+    </item>
+    
+  </channel>
+</rss>

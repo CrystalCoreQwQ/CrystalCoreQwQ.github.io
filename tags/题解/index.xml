@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>题解 on CrystalCore 的博客</title>
+    <link>https://crystalcoreqwq.github.io/tags/%E9%A2%98%E8%A7%A3/</link>
+    <description>Recent content from CrystalCore 的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    
+    <managingEditor>niurousaman@outlook.com (CrystalCore)</managingEditor>
+    <webMaster>niurousaman@outlook.com (CrystalCore)</webMaster>
+    
+    <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
+    
+    <lastBuildDate>Fri, 24 Apr 2026 12:20:54 +0800</lastBuildDate>
+    
+    
+    <atom:link href="https://crystalcoreqwq.github.io/tags/%E9%A2%98%E8%A7%A3/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>CF2225D</title>
+      <link>https://crystalcoreqwq.github.io/posts/cf2225d/</link>
+      <pubDate>Fri, 24 Apr 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/cf2225d/</guid>
+      <description>
+        <![CDATA[<h1>CF2225D</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <h2 id="做法">
+<a class="header-anchor" href="#%e5%81%9a%e6%b3%95"></a>
+做法？
+</h2><p>开题时没思路，想着打表看看能不能找规律：哪些区间异或起来能得到 $0$？于是有了以下代码：</p>
+<p>:::info[打表代码]</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define ll long long
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define str string
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define db double
+</span></span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="k">nullptr</span><span class="p">),</span> <span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="k">nullptr</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// 枚举右端点
+</span></span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="p">(</span><span class="n">ll</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">ll</span> <span class="n">cnt</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;:   &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// 枚举左端点
+</span></span></span><span class="line"><span class="cl">		<span class="k">for</span> <span class="p">(</span><span class="n">ll</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="n">cnt</span> <span class="o">^=</span> <span class="n">j</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">			<span class="k">if</span><span class="p">(</span><span class="n">cnt</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="sc">&#39; &#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>:::</p>
+        
+        <hr><p>本文2026-04-24首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-04-24</p>]]>
+      </description>
+      
+        <category>算法</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>CF2225C</title>
+      <link>https://crystalcoreqwq.github.io/posts/cf2225c/</link>
+      <pubDate>Fri, 24 Apr 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/cf2225c/</guid>
+      <description>
+        <![CDATA[<h1>CF2225C</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <h2 id="做法">
+<a class="header-anchor" href="#%e5%81%9a%e6%b3%95"></a>
+做法
+</h2><p>简单的 DP。</p>
+<p>很容易想到，对于一个 $2 \times 2$ 的部分只有两种填法：</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/5eo8ozcu.png" alt=""></p>
+<p>很显然可以 DP 吧？</p>
+<p>设 $dp[i]$ 表示前 $i$ 列满足要求的最小代价。</p>
+<p>然后位置 $i$ 可以由 $i-2$ 通过加两个横着的矩形转移（填充方法 $1$），也可以由 $i-1$ 用过加一个竖着的矩形转移（填充方法 $2$ 取一半）。</p>
+        
+        <hr><p>本文2026-04-24首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-04-24</p>]]>
+      </description>
+      
+        <category>算法</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>SP22268</title>
+      <link>https://crystalcoreqwq.github.io/posts/sp22268/</link>
+      <pubDate>Fri, 09 Jan 2026 12:20:54 &#43;0800</pubDate>
+      <author>niurousaman@outlook.com (CrystalCore)</author>
+      <guid>https://crystalcoreqwq.github.io/posts/sp22268/</guid>
+      <description>
+        <![CDATA[<h1>SP22268</h1><p>作者：CrystalCore（niurousaman@outlook.com）</p>
+        
+          <h1 id="题目传送门">
+<a class="header-anchor" href="#%e9%a2%98%e7%9b%ae%e4%bc%a0%e9%80%81%e9%97%a8"></a>
+<a href="https://www.luogu.com.cn/problem/SP22268">题目传送门</a>
+</h1><h1 id="sp22268-etfs---欧拉函数筛法-题解">
+<a class="header-anchor" href="#sp22268-etfs---%e6%ac%a7%e6%8b%89%e5%87%bd%e6%95%b0%e7%ad%9b%e6%b3%95-%e9%a2%98%e8%a7%a3"></a>
+SP22268 ETFS - 欧拉函数筛法 题解
+</h1><h2 id="题目大意">
+<a class="header-anchor" href="#%e9%a2%98%e7%9b%ae%e5%a4%a7%e6%84%8f"></a>
+题目大意
+</h2><p>给定区间 $[a, b]$，求区间内每个数的欧拉函数值 $\varphi(n)$。</p>
+<h2 id="算法思路">
+<a class="header-anchor" href="#%e7%ae%97%e6%b3%95%e6%80%9d%e8%b7%af"></a>
+算法思路
+</h2><p>很显然，$10^{12}$ 的数据是不可能线性做的，但是 $b - a \leq 10^6$，那么我们就可以只求出区间内的 $\varphi(i)$。</p>
+        
+        <hr><p>本文2026-01-09首发于<a href='https://crystalcoreqwq.github.io/'>CrystalCore 的博客</a>，最后修改于2026-01-09</p>]]>
+      </description>
+      
+        <category>算法</category>
+      
+    </item>
+    
+  </channel>
+</rss>

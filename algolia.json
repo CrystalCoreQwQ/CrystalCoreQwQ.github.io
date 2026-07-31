@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "b266c3b98d56299660847855e00d037faa4c2388",
+    "permalink": "/posts/class/",
+    "title": "Class","content": " class/struct 用法 本文主讲 class（类） 的用法，因为和 struct 就一个区别……\n定义 class 类型名称 { // 成员 }; 可以添加的成员包括：\n成员变量 成员函数（包括 构造函数 和 析构函数） 一堆…… class 成员默认 private 访问，也就是外界无法访问，那么想让外界访问的话，就有两种方法：\n若是对外界完全公开，使用 public 若是对外界部分公开，使用 protected 或者 friend 访问权限 被声明为 public 的成员对外界完全公开。 被声明为 protected 的成员对派生类完全公开。 被声明为 private 的成员对外界完全不公开。 声明方式：\nclass 类型名称 { 权限类型: }; 没错， public/protected/private后面需要加一个 :，然后在下一行开始声明成员。\n构造函数 \u0026amp;amp; 析构函数 构造函数 构造函数 指的是，该类的变量在创建时所自动运行的函数。\n这是一些注意事项：\n构造函数没有返回值类型，注意，是没有，连 void 也不要加。 构造函数和类的名称必须相同，如果类名称为 node，那么构造函数的名称也为 node。 构造函数通常声明为 public 类型，否则外界无法直接构造。\n使用方式：\nclass node { private: int to, val; public: node(int x, int y) { to = x; val = y; // 完成了对 node 的成员变量的初始化 cout \u0026amp;lt;\u0026amp;lt; \u0026amp;#34;node Initialized.\u0026amp;#34; \u0026amp;lt;\u0026amp;lt; `\\n`; // 没用的一句话 }; }; 如果是初始化成员变量的话，那么还有另一种方式：\nclass node { private: int to, val; public: node(int x, int y) : to(x), val(y) { cout \u0026amp;lt;\u0026amp;lt; \u0026amp;#34;node Initialized.\u0026amp;#34; \u0026amp;lt;\u0026amp;lt; `\\n`; }; }; 叫做 初始化列表，更推荐使用这个。\n构造函数和普通函数一样，可以定义多个，只要参数列表不同，编译器会自动匹配合适的那个。\n构造函数会自动做隐式转换，比如：\nclass node { …","date": "2026-07-25 12:20:54",
+    "updated": "2026-07-25 12:20:54"
+  }, 
+  {
+    "objectID": "72a66e46e98fd6f20861c6b8bf58b8c270269fb1",
+    "permalink": "/posts/feedxjc/",
+    "title": "Feedxjc","content": "有谁懂 xjc 姐姐吗？\n表面上是一位 OI 超级厉害的大姐姐，实际上也是一直香香软软的小蛋糕！不仅说话软软糯糯的，还经常跟我们讲她的小故事，那一脸认真的样子，就像温柔的姐姐在哄一只闹腾的小猫。有时候有小一点的姐姐给她发私信，她也从不避开，反而大大方方地拉上大家一起看。其他姐姐听说发私信会被 xjc 姐姐“公开处刑”，反而觉得好玩，争先恐后地跑去给她发私信啦！\n偶尔姐姐不小心弄伤了自己，也不用太担心见不到她——她会乖乖先去趟医院，然后顶着伤回来见你，继续给你讲故事，真是一只倔强又温柔的小猫咪！\n啊，我真的不行了，好想养一只！\n","date": "2026-07-24 10:35:04",
+    "updated": "2026-07-24 10:35:04"
+  }, 
+  {
+    "objectID": "4c3fae50e1ce746133593c628bc9b223699882cf",
+    "permalink": "/posts/feedcc/",
+    "title": "FeedCC","content": "有谁懂晶核吗？\n表面上是一只香香软软的小蛋糕，实际上也是一只傲娇的小猫咪！不仅做错了事当时绝不道歉，还会胡乱找个理由把错赖到你头上，那副理直气壮的样子，就像是在哄小孩一般，就算偶尔松口，也只是丢下短短几个字，然后扭头就跑。但是过几天，就会弱弱地补上他的道歉，嘴硬心软让人拿他没一点办法。\n有时候不小心惹到他了，只需要乖乖地等上几天，再凑过去跟他撒个娇，不论多大的事他都会 “勉为其难” 原谅你的，真像是一只软软糯糯的小猫咪！\n啊，我真的不行了，好想养一只！\n（写了一小时多才凑出来的 T^T）\n","date": "2026-07-24 10:33:42",
+    "updated": "2026-07-24 10:33:42"
+  }, 
+  {
+    "objectID": "a47de9a996d3b13e67e12732d56c86a43f64d0f9",
+    "permalink": "/posts/hugo/",
+    "title": "Hugo 搭建博客教程","content": "严肃发现我是为数不多用 Hugo 搭建博客的人。\n首先来一览 Hugo 和 Hexo 的差别\nHexo 的主要优势 上手简单 功能丰富 Hugo 的主要优势 构建速度快 无需依赖 Node.js 等工具 至于我为什么选择用 Hugo 而不是 Hexo 呢……\n我都搭建完了才知道 Hexo 这个东西\n本文仅仅介绍如何使用 Hugo 搭建博客，至于怎么部署，怎么上传，其它文章已经写得很详细了\n宣博客\n下载 Hugo link (V 0.164.0)\n直接帮你们选的包含扩展功能的那一个，虽然好像用不到。\n下载完后解压到一个文件夹内，然后将路径添加到环境变量里。\n添加环境变量 在 开始菜单 搜索 \u0026amp;ldquo;编辑系统环境变量\u0026amp;rdquo; 双击打开 \u0026amp;ldquo;环境变量\u0026amp;rdquo; 按钮 双击打开下半部分 \u0026amp;ldquo;系统变量\u0026amp;rdquo; 的 \u0026amp;ldquo;Path\u0026amp;rdquo; 部分 点击右侧的 \u0026amp;ldquo;新建\u0026amp;rdquo; 按钮，将 \u0026amp;ldquo;hugo.exe\u0026amp;rdquo; 所在的文件路径复制进去 连续点击三个窗口的确定，保存修改。 打开 \u0026amp;ldquo;cmd\u0026amp;rdquo; 或 \u0026amp;ldquo;Powershell\u0026amp;rdquo;，输入 \u0026amp;ldquo;hugo \u0026amp;ndash;version\u0026amp;rdquo; 以测试是否成功。 环境就配置好了，这是真的很简单吧。\n选定主题 然后你需要去找一个主题模版（自己写也行。。。）\n这是官方的主题库：link\n这是我使用的主题：link\n选好后下载就行了，至于怎么在 GitHub 下载。。。\n仓库界面里有一个大大的绿色的 \u0026amp;ldquo;Code\u0026amp;rdquo; 按钮，打开后选择 \u0026amp;ldquo;Download ZIP\u0026amp;rdquo; 即可。\n开始搭建 找一个文件夹（不一定为空，Hugo 会自动新建一个文件夹存放）\n打开该路径下的 \u0026amp;ldquo;cmd\u0026amp;rdquo; 或 \u0026amp;ldquo;Powershell\u0026amp;rdquo;，最简单的方式就是在路径栏里直接输入。\n指令：hugo new site [替换为你的文件夹名称]\n然后就会新建一个博客根目录，点击进去，找到 \u0026amp;ldquo;themes\u0026amp;rdquo; 文件夹，把你下载的主题复制进去解压缩。\n如果你要修改配置文件，那么请将解压缩后的主题文件夹中的 config、data、i18n 等 …","date": "2026-07-24 10:28:46",
+    "updated": "2026-07-24 10:28:46"
+  }, 
+  {
+    "objectID": "6613bc7c2b608a5f858b39e57378bb5f7d22f7cf",
+    "permalink": "/posts/%E7%A5%9E%E4%BA%BA1/",
+    "title": "神人1","content": "\n","date": "2026-05-11 12:20:54",
+    "updated": "2026-05-11 12:20:54"
+  }, 
+  {
+    "objectID": "bdd3b9ad29ad27b958765810b77ee82743a5e328",
+    "permalink": "/posts/cf2225c/",
+    "title": "CF2225C","content": " 做法 简单的 DP。\n很容易想到，对于一个 $2 \\times 2$ 的部分只有两种填法：\n很显然可以 DP 吧？\n设 $dp[i]$ 表示前 $i$ 列满足要求的最小代价。\n然后位置 $i$ 可以由 $i-2$ 通过加两个横着的矩形转移（填充方法 $1$），也可以由 $i-1$ 用过加一个竖着的矩形转移（填充方法 $2$ 取一半）。\n用字符串 $a, b$ 代表第一、第二行，那么转移：\ndp[i] = min(dp[i - 1] + (a[i] != b[i]), dp[i - 2] + (a[i] != a[i - 1]) + (b[i] != b[i - 1])); Code #include \u0026lt;bits/stdc++.h\u0026gt; #define ll long long #define str string #define db double using namespace std; constexpr ll MAXN = 2e5 + 5; ll t, n, dp[MAXN]; str a, b; int main() { ios::sync_with_stdio(false); cin.tie(nullptr), cout.tie(nullptr); cin \u0026gt;\u0026gt; t; while (t--) { cin \u0026gt;\u0026gt; n \u0026gt;\u0026gt; a \u0026gt;\u0026gt; b; a = \u0026#39; \u0026#39; + a, b = \u0026#39; \u0026#39; + b, dp[0] = 0; for (ll i = 1; i \u0026lt;= n; ++i) { dp[i] = dp[i - 1] + (a[i] != b[i]); if (i \u0026gt;= 2) dp[i] = min(dp[i], dp[i - 2] + (a[i] != a[i - 1]) + (b[i] != b[i - 1])); } cout \u0026lt;\u0026lt; dp[n] \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39;; } return 0; } ","date": "2026-04-24 12:20:54",
+    "updated": "2026-04-24 12:20:54"
+  }, 
+  {
+    "objectID": "19d1bfe7d8c6bc8fdff377647d826c2d41d4c478",
+    "permalink": "/posts/cf2225d/",
+    "title": "CF2225D","content": " 做法？ 开题时没思路，想着打表看看能不能找规律：哪些区间异或起来能得到 $0$？于是有了以下代码：\n:::info[打表代码]\n#include \u0026lt;bits/stdc++.h\u0026gt; #define ll long long #define str string #define db double using namespace std; int main() { ios::sync_with_stdio(false); cin.tie(nullptr), cout.tie(nullptr); // 枚举右端点 for (ll i = 1; i \u0026lt;= 30; ++i) { ll cnt = i; cout \u0026lt;\u0026lt; i \u0026lt;\u0026lt; \u0026#34;: \u0026#34;; // 枚举左端点 for (ll j = i - 1; j \u0026gt;= 1; j--) { cnt ^= j; if(cnt == 0) cout \u0026lt;\u0026lt; j \u0026lt;\u0026lt; \u0026#39; \u0026#39;; } cout \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39;; } return 0; } :::\n然后你就会获得这样一份结果： 找到规律了吗？ 我们将左端点为 $1$ 的区间视作左端点为 $0$，那么就得出一下结论：\n除了 $1$，所有奇数都可以作为右端点，偶数都不行。 对于模 $4$ 等于 $3$ 的右端点，其左端点有 $0,4,8,\\dots,4 \\times n$；对于模 $4$ 等于 $1$ 的右端点，其左端点有 $2,6,10,\\dots,4 \\times n + 2$。 既然要求这种区间必须包含值 $x$，那么求出 $x$ 左侧的左端点，右侧的右端点，再相乘即可。\n具体的计算逻辑应该没必要讲，需要注意的是无论是左端点还是右端点都是 可以 包含值 $x$ 的，不要少算了。\n好吧还是证明一下，但是和其他题解的证明差不多。\n令 $x = 4 \\times n$，那么对于任意 $n \\in N^+$，有 $x \\oplus (x+1) \\oplus (x+2) \\oplus (x+3) = 0$\n因为这 $4$ 个数中，除去最低的两个二进制位，其余位置完全相等，异或起来结果一定为 $0$，而最低的两个位置上也都分别只出现了 $2$ 个 $1$，异或起来也是 $0$，所以从 $0$ 开始每 $4$ 个连续的整数异或结果都为 $0$。\n令 $f(i) = 0 \\oplus 1 \\oplus 2 \\oplus 3 \\oplus \\dots \\oplus i$。\n当 $i \\bmod 4 = 0$ 时：\n$$ \\begin{aligned} f(i) \u0026= (0 \\oplus 1 \\oplus 2 \\oplus 3) \\oplus (4 \\oplus 5 \\oplus 6 \\oplus 7) \\oplus \\dots \\oplus i\\\\ \u0026= 0 \\oplus 1 \\oplus \\dots \\oplus i\\\\ \u0026= i \\end{aligned} $$当 $i \\bmod 4 = 1$ 时：\n$$ \\begin{aligned} f(i) \u0026= f(i-1) \\oplus i\\\\ \u0026= (i-1) \\oplus i\\\\ \u0026= 1 \\end{aligned} $$（注：因为 $i \\equiv 1 \\pmod 4$ 所以 $i$ 的最低两位是 01，$i-1$ 的最低两位是 00 所以除了最低位其余位全是 0）\n当 $i \\bmod 4 = 2$ 时：\n$$ \\begin{aligned} f(i) \u0026= f(i-1) \\oplus i\\\\ \u0026= 1 \\oplus i\\\\ \u0026= i+1 \\end{aligned} $$ （注：因为 $i \\equiv 2 \\pmod 4$ 所以 $i$ 的最低两位是 10 所以 $1 \\oplus i$ 的最低两位是 11，所以结果也就是 $i+1$）\n当 $i \\bmod 4 = 3$ 时\n$$ \\begin{aligned} f(i) \u0026= f(i-1) \\oplus i\\\\ \u0026= (i-1+1) \\oplus i\\\\ \u0026= 0 \\end{aligned} $$就这样吧，剩下的推导很明显了，便不再细讲。\nCode #include \u0026lt;bits/stdc++.h\u0026gt; #define ll long long #define str string #define db double using namespace std; constexpr ll mod = 998244353; ll t, n, x; int main() { ios::sync_with_stdio(false); cin.tie(nullptr), cout.tie(nullptr); cin \u0026gt;\u0026gt; t; while (t--) { cin \u0026gt;\u0026gt; n \u0026gt;\u0026gt; x; // mod 4 = 3 的右端点 ll r1 = ((n + 1) / 4 - x / 4) % mod; // mod 4 = 1 的右端点 ll r2 = ((n - 1) / 4 - (x - 2) / 4) % mod; // 从 0(实际为1) 开始的左端点 ll l1 = ((x + 4) / 4) % mod; // 从 2 开始的左端点 ll l2 = ((x + 2) / 4) % mod; // 相乘即可 cout \u0026lt;\u0026lt; (l1 * r1 % mod + l2 * r2 % mod) % mod \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39;; } return 0; } ","date": "2026-04-24 12:20:54",
+    "updated": "2026-04-24 12:20:54"
+  }, 
+  {
+    "objectID": "664307ddd1adafc8c0d517d8853918a5f7658f10",
+    "permalink": "/posts/%E7%BD%91%E9%A1%B5%E8%83%8C%E6%99%AF%E6%9B%B4%E6%8D%A2/",
+    "title": "网页背景更换","content": " 使用指南 请确保你已经安装了 Tampermonkey 浏览器扩展。\n安装此脚本后刷新页面，会显示一个蓝色球形按钮，双击可展开、收缩。\n小球展开之后不可拖动，并会出现多个功能按键，将鼠标悬停在按键上会有功能提示。\n点击上传背景按钮并选择图片之后会出现图片裁剪界面，被选中的部分会替换为你的网页背景。\n对于同一个网站，使用同一套设置，不同网站之间独立。\n支持常见图片格式，如：png、jpg 等。图片上传后会存储到你运行此脚本的浏览器扩展中，不会上传到其他任何地方。\n因为设置都保存在你的 Tampermonkey 浏览器扩展里，所以重启浏览器之后无需再次设置。\n更多内容请自行体验。\nCode 脚本仓库\n以后更新会直接发布到 GitHub 上，如需更新请到仓库里自行复制代码。\n其它 可能脚本还有一些 BUG 没修，请见谅。\n如果你还有什么建议添加的功能或者发现了什么 BUG，请私信我进行修改。\n","date": "2026-03-20 12:20:54",
+    "updated": "2026-03-20 12:20:54"
+  }, 
+  {
+    "objectID": "aeb8dec4bb46b9f0aafa40249a4908f96dc9c8ce",
+    "permalink": "/posts/%E5%88%86%E5%9D%97%E5%9F%BA%E7%A1%80/",
+    "title": "分块基础","content": "分块是一种思维简单，代码简洁易懂的算法，虽然时间复杂度 $O(q \\times \\sqrt[2]{n})$ 相对于线段树的 $O(q \\times \\log{n})$ 要慢很多，但是它的算法兼容性和思维、代码难度确实远优于线段树。\n算法过程 分块和线段树一样一般用于解决区间查询和修改操作的问题。\n我们考虑将整个序列分为 $\\sqrt{n}$ 个块（有可能数量上有点出入，但是不重要），除了最后一个块，其它块的大小都是 $\\sqrt{n}$。\n对于每一个块，储存这个块内所有元素的信息，这样如果操作的区间覆盖整个块，可以直接调用这个块的信息而非每个元素的信息，因为总的块的个数在 $\\sqrt{n}$ 左右，所以每次操作时间复杂度是 $\\sqrt{n}$ 的。\n以经典的区间加减，区间求和为例。\n变量定义 我们需要定义 l,r 表示这个块包含了原序列的哪段区间，用 sum 表示它们的和，然后再像线段树一样定义一个 tag 进行懒惰标记。\n大概这样就行了：\nclass block { public: int l, r, sum, tag; }; 然后需要再定义一个 blg 数组储存每一个元素属于哪一个块。\n初始化 首先，我们在读取原数组 a 的同时计算每个元素所属的块以及那个块的总和，sqr 表示块的大小，这里我们用 blk 数组储存每个块的信息。\n// 从 1 开始为块编号，a[1] 到 a[sqr] 属于第一个块，a[sqr + 1] 到 a[2 * sqr] 属于第二个块，以此类推。 for (int i = 1; i \u0026amp;lt;= n; ++i) { cin \u0026amp;gt;\u0026amp;gt; a[i], blg[i] = (i - 1) / sqr + 1; blk[blg[i]].sum += a[i]; } 然后对每个块的左右端点（也就是包含原数组的哪一块区间）进行初始化。\nfor (int i = 1; i \u0026amp;lt;= blg[n]; ++i) { blk[i].l = blk[i - 1].r + 1; blk[i].r = min(i * sqr, n); } 然后就没有了。\n区间加法 对于一个操作的区间 $[l,r]$，其中的部分元素所在的块所包含的所有元素不一定都在 $[l,r]$ 之间，比如说操作区间是 $[2,5]$，但是 $2$ 所在的块包含的区间是 $[1,3]$， …","date": "2026-03-09 12:20:54",
+    "updated": "2026-03-09 12:20:54"
+  }, 
+  {
+    "objectID": "23a275a7d63b4f6f1731dc8943e3a762c4a9799f",
+    "permalink": "/posts/%E6%B4%9B%E8%B0%B7300%E7%B2%89%E7%B2%89%E7%A6%8F/",
+    "title": "洛谷300粉粉福","content": "\n","date": "2026-02-27 12:20:54",
+    "updated": "2026-02-27 12:20:54"
+  }, 
+  {
+    "objectID": "cd5d8efc9ce4253bdb4809bac1feb0825b6e9e1e",
+    "permalink": "/posts/fan_xiaoyi%E4%B8%8D%E8%BE%B1%E4%BD%BF%E5%91%BD/",
+    "title": "fan_xiaoyi不辱使命","content": " fan_xiaoyi 不辱使命 前情提要\n江王$^1$使人谓 @C老 $^2$日：“寡人欲以年级主任之权停信竞，@CXJ 其许寡人！” @C老日：“主任之命，弗敢拒抗，必遵。虽然，受任于家长，弗敢停。”江王不说。@C老 因使 @fan_xiaoyi 使于化$^3$。\n江王谓 @fan_xiaoyi 日：“寡人以年级主任之权停信竞，@C老 不听寡人，何也？且化灭数亡生，而 JX 以去年无金牌$^4$存者，以 JX 为金教$^5$者，故未强责也。今吾以主任之权，请停于 JX，而 JX 逆寡人，轻寡人与？” @fan_xiaoyi 对日：“否，非若是也。@C老 受任于家长而教之，虽校长不敢停也，岂直年级主任哉？”\n江王怫然怒，谓 @fan_xiaoyi 日：“公亦尝闻主任之怒乎？” @fan_xiaoyi 对日：“生未尝闻也。”江王日：“主任之怒，伏尸百万$^6$，流墨千里。”@fan_xiaoyi 日：“主任尝闻学生之怒乎？”江王日：“学生之怒，亦言秽慰亲$^7$，以将指$^8$示人尔。”@fan_xiaoyi 日：“此庸生之怒，非举人之怒乎也。夫 @CDFLS_mao_zx 之刺 @CCF_NOI$^9$也，彗星袭日；@JDScript0117 之刺学长$^{10}$也，黑红$^{11}$贯月；吕将军之刺董卿也，鸳鸯缢于足下。此三子者，皆举人之怒也，怀怒未发，休祲降于天，与生而将四矣。若举人必怒，入局二人，流墨五笔，全校缟素，今日是也$^{12}$。”，挺身而起。\n江王色挠，长跪而射$^{13}$之曰：“学生坐！何至于此！寡人谕矣：夫数、生灭亡，而信竞以去年无金牌存者，徒以有学生也。”\n注释：\n江王：化竞教练兼年级主任。 C老：信竞教练。 化：代指化竞。 去年无金牌：最强的选手发烧了，遗憾只得了银牌，但 C老 的学生是上上届，也就是前年。 金教：金牌教练的简称。 伏尸百万: 作业过量以致人死亡。 言秽慰亲: 语言污秽，慰问双亲。 将指： 中指。 CDFLS_mao_zx 之刺 CCF_NOI：CDFLS_mao_zx 就是那个 F**K 【数据删除】的人。 JDScript0117 之刺学长: JDScript0117 作为一个初三 OIer 时，成绩就薄纱本校所有学长（其实碾压你们在座的绝大多数人）。 黑红: JDScript0117 是 CF 黑红大佬 入局二人，流墨五笔，全校缟素: fao_xiaoyi 要去告发江王。 射: 我的言字旁呢？被谁吃了？ 注：本文所出现的所有人物皆属于 CW。\n什么？你问 董卓 和 吕布 也是吗？\n猜你想点\n","date": "2026-02-07 00:00:00",
+    "updated": "2026-02-07 00:00:00"
+  }, 
+  {
+    "objectID": "23550d533d409227545bb380346e5d5ca9900263",
+    "permalink": "/posts/bitset/",
+    "title": "Bitset的使用方法","content": " 前言 bitset 是一种空间开销极小，时间开销也极小的一种类似于 bool 类型的方法。相对于 bool 的每一个变量占用一个字节，bitset 每一个变量只占用一个位（1字节 = 8位），所以空间占用极小，访问也特别快，适合用于卡常。\n本文只讲一些常见的 bitset 函数和操作，其他的神秘函数和神秘操作一概不提。\n定义方式 bitset 包含在头文件 #include\u0026amp;lt;bitset\u0026amp;gt; 里，当然万能头自带。\n定义方式：\nbitset\u0026amp;lt;数组大小\u0026amp;gt; 变量名(初始化值); 其中，程序会按“初始化值”的对应二进制位初始化 bitset，举个例子：\nbitset\u0026amp;lt;100005\u0026amp;gt; vis(2) 这里 2 的二进制是 10，所以对于我们定义的 $vis$ 数组中，只有第二位被赋值为了 1，其余都是 0。\n再举个例子：\nbitset\u0026amp;lt;8\u0026amp;gt; vis(0xFF) 这个 0xFF 是十六进制，转化为二进制为 11111111，所以这里 $vis$ 被赋值为了 11111111。\n当然 (初始化值) 这部分可以省略，就默认初始化为 0。\nbitset 还可以从字符串初始化，但是真的有人会用吗？\n访问方式 bitset 有两种访问方式：\n变量名[下标]; 和\n变量名.test(下标); OI 建议使用第一种，因为第二种会多一些检查机制，速度稍慢，不过区别不大，但是第一种更符合一般的数组调用风格。\n修改方式 bitset 依旧有两套元素修改方式。\n第一种就是正常的数组修改方式，不多说。\n第二种：\n变量名.set(下标) // 赋值为 1 变量名.reset(下标) // 赋值为 0 // 这两个函数的其他用处 变量名.set() // 将所有位设置为 1 变量名.reset() // 将所有位设置为 0 显然第二种方法还是没有第一种速度快，依旧推荐使用第一种。\n还有取反操作：\n变量名.flip() // 所有元素取反，和 变量名 = ~变量名 效果相同 变量名.flip(下标) // 下标位置取反 哦对了，在对整个 bitset 赋值的时候不要使用这种模式：\n变量名 = (1 \u0026amp;lt;\u0026amp;lt; 31); 但是这样是可以的：\n变量名 = (1UL \u0026amp;lt;\u0026amp;lt; 31); 两者的区别在于第二种声明了无符号类型，如果你使用第一种的话，程序会进 …","date": "2026-02-06 12:20:54",
+    "updated": "2026-02-06 12:20:54"
+  }, 
+  {
+    "objectID": "241b8571709df72639804262c69bb0821a8d0a06",
+    "permalink": "/posts/sp22268/",
+    "title": "SP22268","content": " 题目传送门 SP22268 ETFS - 欧拉函数筛法 题解 题目大意 给定区间 $[a, b]$，求区间内每个数的欧拉函数值 $\\varphi(n)$。\n算法思路 很显然，$10^{12}$ 的数据是不可能线性做的，但是 $b - a \\leq 10^6$，那么我们就可以只求出区间内的 $\\varphi(i)$。\n那么就要用到这个玩意：\n欧拉函数公式：\n令\n$$ n = p_1^{k_1} \\times p_2^{k_2} \\times \\dots \\times p_m^{k_m} $$则：\n$$ \\varphi(n) = n \\prod_{p|n} \\left(1 - \\frac{1}{p}\\right) = n \\prod_{p|n} \\frac{p-1}{p}\\\\ $$看不懂一点\n那么就可以这么做：\n预处理素数（求出所有小于等于 $\\sqrt{b}$ 的素数）\n大于 $\\sqrt{b}$ 的素数在区间中最多出现一次（除了它本身）。 所以只需筛到 $\\sqrt{b}$ 就可以处理所有可能的质因子了。 区间筛质因子：\n对每个预处理出的素数 $p_i$，找到区间内所有 $p_i$ 的倍数。 记录每个数的质因子 $p_i$，同时将原数不断除以 $p_i$ 直到不能整除。 计算欧拉函数：\n对区间内的每个数，利用记录的质因子和公式计算 $\\varphi(n)$。 如果筛完后剩余部分大于 $1$，说明它是一个大于 $\\sqrt{b}$ 的质因子，也需要计算。 然后就没有了。\nCode 为你献上！\n#include \u0026lt;bits/stdc++.h\u0026gt; #define ll long long #define str string #define db double using namespace std; constexpr ll MAXN = 1e6 + 10; ll l, r, vl[MAXN]; // vl[i]: 区间中第i个数，会不断除以质因子 bitset\u0026lt;MAXN + 10\u0026gt; vis; vector\u0026lt;ll\u0026gt; primes, vec[MAXN]; // vec[i]: 区间中第i个数的质因子列表 // 线性筛：求出所有不超过mx的素数 inline void prime(ll mx) { for (ll i = 2; i \u0026lt;= mx; ++i) { if (!vis[i]) primes.emplace_back(i); for (auto p : primes) { if (i * p \u0026gt; mx) break; vis[i * p] = true; if (i % p == 0) break; } } } int main() { ios::sync_with_stdio(false); cin.tie(nullptr), cout.tie(nullptr); cin \u0026gt;\u0026gt; l \u0026gt;\u0026gt; r; prime(sqrt(r) + 5); // 初始化：vl[i] = 区间中第i个数（从l开始） for (ll i = 1ll; i \u0026lt;= r - l + 1ll; ++i) vl[i] = l + i - 1ll; // 用素数筛区间内的数，记录质因子 for (const ll\u0026amp; p : primes) { ll start = (l + p - 1ll) / p; // ceil(l/p) ll end = r / p;\t// floor(r/p) for (ll i = start; i \u0026lt;= end; ++i) { vec[i * p - l + 1ll /*在区间中的位置*/].emplace_back(p); // 记录质因子p // 去除所有p因子 while (vl[i * p - l + 1ll] % p == 0) vl[i * p - l + 1ll] /= p; } } // 计算并输出每个数的欧拉函数值 for (ll i = 1; i \u0026lt;= r - l + 1; ++i) { ll n = l + i - 1ll; // 原始数值 ll phi = n;\t// 初始化为n，将逐步乘(1-1/p) // 对每个质因子p：phi = phi / p * (p-1) for (const ll\u0026amp; p : vec[i]) phi = phi / p * (p - 1ll); // 处理可能剩余的大于 sqrt(b) 的质因子 if (vl[i] != 1ll) phi = phi / vl[i] * (vl[i] - 1ll); cout \u0026lt;\u0026lt; phi \u0026lt;\u0026lt; \u0026#39;\\n\u0026#39;; } return 0; } 点个关注吧~\n","date": "2026-01-09 12:20:54",
+    "updated": "2026-01-09 12:20:54"
+  }]
